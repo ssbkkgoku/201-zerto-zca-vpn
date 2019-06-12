@@ -292,7 +292,7 @@
         "displayName": "vm"
       },
       "plan": {
-        "name": "zerto60ga",
+        "name": "zerto65ga",
         "publisher": "zerto",
         "product": "zerto-cloud-appliance-50"
       },
@@ -309,7 +309,7 @@
           "imageReference": {
             "publisher": "zerto",
             "offer": "zerto-cloud-appliance-50",
-            "sku": "zerto60ga",
+            "sku": "zerto65ga",
             "version": "latest"
           },
           "osDisk": {
