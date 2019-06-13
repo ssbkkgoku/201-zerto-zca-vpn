@@ -7,7 +7,7 @@
          "metadata":{  
             "description":"Route based (Dynamic Gateway) or Policy based (Static Gateway)"
          },
-         "defaultValue":"RouteBased",
+         "defaultValue":"PolicyBased",
          "allowedValues":[  
             "RouteBased",
             "PolicyBased"
@@ -22,14 +22,14 @@
       },
       "localAddressPrefix":{  
          "type":"string",
-         "defaultValue": "10.6.10.0/24",
+         "defaultValue": "10.6.100.0/24",
          "metadata":{  
             "description":"CIDR block representing the address space of your local/on-prem network's Subnet"
          }
       },     
       "azureVNetAddressPrefix":{  
          "type":"string", 
-         "defaultValue": "10.6.0.0/15",       
+         "defaultValue": "10.7.0.0/22",       
          "metadata":{  
             "description":"CIDR block representing the address space of the Azure VNet"
          }
@@ -43,14 +43,14 @@
       },
       "gatewaySubnetPrefix":{  
          "type":"string",  
-         "defaultValue": "10.7.200.0/29",       
+         "defaultValue": "10.7.6.0/29",       
          "metadata":{  
             "description":"CIDR block for gateway subnet, subset of azureVNetAddressPrefix address space"
          }
       },      
       "gatewaySku":{  
          "type":"string",
-         "defaultValue":"Standard",
+         "defaultValue":"Basic",
          "allowedValues":[  
             "Basic",
             "Standard",
@@ -105,7 +105,7 @@
       "vmSize":"Standard_DS3_v2",
       "vmOSDiskName":"vmOSDisk",
       "nsgName":"zca-nsg",
-      "virtualNetworkName": "vnet",
+      "virtualNetworkName": "HB-Zerto-vNet",
       "connectionName": "Azure2Other",
       "gatewayName":"AzureGateway",
       "gatewayPublicIPName": "azureGatewayIP",
