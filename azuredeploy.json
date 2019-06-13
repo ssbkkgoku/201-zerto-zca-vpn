@@ -29,21 +29,21 @@
       },     
       "azureVNetAddressPrefix":{  
          "type":"string", 
-         "defaultValue": "10.7.0.0/22",       
+         "defaultValue": "10.200.0.0/22",       
          "metadata":{  
             "description":"CIDR block representing the address space of the Azure VNet"
          }
       },     
       "subnetPrefix":{  
          "type":"string",
-         "defaultValue": "10.7.4.0/24",
+         "defaultValue": "10.200.1.0/24",
          "metadata":{  
             "description":"CIDR block for VM subnet, subset of azureVNetAddressPrefix address space"
          }
       },
       "gatewaySubnetPrefix":{  
          "type":"string",  
-         "defaultValue": "10.7.6.0/29",       
+         "defaultValue": "10.200.3.0/29",       
          "metadata":{  
             "description":"CIDR block for gateway subnet, subset of azureVNetAddressPrefix address space"
          }
