@@ -105,7 +105,7 @@
       "vmSize":"Standard_DS3_v2",
       "vmOSDiskName":"vmOSDisk",
       "nsgName":"zca-nsg",
-      "virtualNetworkName": "HB-Zerto-vNet",
+      "virtualNetworkName": "HB-Zerto-vNet2",
       "connectionName": "Azure2Other",
       "gatewayName":"AzureGateway",
       "gatewayPublicIPName": "azureGatewayIP",
